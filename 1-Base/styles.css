@@ -1,0 +1,221 @@
+body{
+    margin-bottom: 1000px;
+}
+
+
+/*Regra: Valor (especifico, medida)*/
+
+/* p { */
+    /* color: red; */
+/* } */
+
+/*Seletores basicos*/
+/* Seletor de tag = tag = especifidade 1 
+seletor de classe = . = 2
+seletor de id = * = 3 (3 ganha do resto e assim por diante em ordem de importancia)
+*/
+h4{
+    font-size: 20px;
+}
+
+/* Classe = seletro mais especifico para alguns alementos
+id = para um elemento apenas
+classe = cargo de trabalho
+id = cpf  */
+
+.titulo{
+    color: burlywood;
+    font-size: 40px;
+}
+#paragrafo-especial{
+    font-style: italic;
+    color: rgb(255, 0, 111);
+}
+
+/* propriedade de textos */
+.basic-text{
+    font-family: Arial, sans-serif;
+    color: #042c19;
+}
+.styled-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.weighty-text{
+    font-weight: bold;
+    font-size: 40px;
+}
+.fancy-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: darkolivegreen;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* 99% das vezes se usa hex-color
+algumas veze rgba para contorlar opacidade com o a */
+
+.hex-color{
+    color: #FF6310;
+    font-size: 20px;
+}
+
+.rgb-color{
+    /* red green e blue */
+    /* mais escuro 0 e mais claro 255 */
+    color: rgb(40, 35, 150);
+}
+
+.hsl-color{
+    /* hue,saturation e lightness */
+    color: hsl(326, 84%, 75%);
+}
+ .rgba-color{
+    background-color: rgba(40, 200, 10, 0.1);
+ }
+
+ .hsla-color{
+    background-color: hsla(100, 40%, 30%, 0.1);
+ }
+
+ /* Estilo de links */
+ .simple{
+    text-decoration: none;
+    color:red;
+ }
+
+ .fancy{
+    text-decoration: line-through;
+    font-style: italic;
+ }
+ .hover{
+    text-decoration: none;
+ }
+ .hover:hover{
+    text-decoration: underline;
+    color: orange;
+ }
+ .bold-link2{
+    font-weight: 900;
+ }
+
+ /* Box model */
+/* altura e largura */
+ .width-height{
+    width: 200px;
+    height: 100px;
+    border: 2px solid #042c19;
+    background-color: #ddabab;
+ }
+/* espacamento interno dentro dos 4 cantos */
+ .padding-example{ 
+    width: 200px;
+    height: 100px;
+    border: 2px solid #123;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 60px;
+ }
+
+ /* margem = espaço externo */
+ .margin-example{
+    margin: 80px;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #123;
+ }
+ .complete-box{
+    width: 200px;
+    height: 100px;
+    border: 2px solid #123;
+    /* padding com dois numeros superior e lateral e assim como margin 
+    isso seria shorthand que é o usado no trabalho
+    ordem é todos os lados com margin e dps padding com cima/baixo e lateral*/
+    padding: 50px 100px; 
+    margin: 10px 20px 30px 40px;
+ }
+
+ /* Positions */
+
+ .static{
+    position: static;
+    background-color: #FF6310;
+    border: solid 1px #000
+ }
+
+ .relative{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    background-color: #042c19;
+ }
+ .absolute{
+    /* usa de refernica o body */
+    position: absolute;
+    background-color: #b5c714;
+    top: 10px;
+    left: 250px; 
+ }
+ .fixed{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: pink;
+    border: 2px solid #b5c714 ;
+ }
+ .sticky{
+    position: sticky;
+    top: 0;
+    background-color: rgb(235, 12, 12);
+    border: 2px solid #000;
+ }
+ /* absolute precida de um pai relativo */
+ .relative-container{
+    margin-top: 300px;
+    width: 300px;
+    height: 300px;
+    border:1px solid #000;
+    position: relative;
+ }
+ .absolute-inside-relative{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    background-color: #FF6310;
+
+ }
+
+ /* flexbox */
+ .flex-container{
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 1000px;
+ }
+
+ .flex-item{
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid blue
+    
+ }
+ .flex-container{
+    /* end ou start */
+    justify-content: flex-end;
+ }
+ .flex-container{
+    justify-content: center;
+    align-items: center;
+ }
+ .flex-item{
+    /* sobrepoe comandos como width */
+    flex: 1;
+ }
+ .flex-container{
+    flex-direction: column;
+ }
+ /* flex sempre precisa de um elemento pai */
+ /* flexbox ajuda a gente a posicionar os itens */
+ /* Para varios elementos */

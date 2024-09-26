@@ -1,0 +1,6 @@
+/* Finalidade do arquivo margin-example = é a area externa da imagem */
+
+.text{
+    margin: 20px;
+    background-color: yellow;
+}

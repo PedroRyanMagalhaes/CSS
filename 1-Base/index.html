@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Base</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <!--Linkando css aqui no html essa é a forma indicada de se fazer em todos projetos-->
+</head>
+<body>
+        <!--Inline - uma forma errada--> 
+        <h1 style="color: blueviolet; font-style: italic;" >Testando algun efeito no Css inline</h1>
+
+        <!--feito no head outra errada--> 
+        <h2>Testando agora com Head</h2>
+        <h2>Esse tambem pega por ser compartilhado</h2>
+        <!--forma certa criando pagina e referenciando-->
+        <p>Testando a cor do paragrafo</p>
+
+        <!--Seletores comuns-->
+            <div>
+                <h2 class="titulo">Este seria meu titulo</h2>
+                <p id="paragrafo-especial">Este seria o paragrafo especial</p>
+                <h4>Aqui é o de css por tag</h4>
+                <h2 class="titulo">Outro titulo</h2>
+            </div>
+
+            <!--Texto-->
+            <p class="basic-text">Texto basico e simples para ler </p>
+            <p class="styled-text">Texto nem tao basico assim para sentir</p>
+            <p class="weighty-text">Texto com peso e vigor</p>
+            <p class="fancy-text">Texto la ele milton cunha da silva</p>
+
+            <!--cor-->
+            <p class="hex-color">texto com cor em hex</p>
+            <p class="rgb-color">texto com cor em rgb</p>
+            <p class="hsl-color">texto com cor em hsl</p>
+            <p class="rgba-color">texto com cor em rgba</p>
+            <p class="hsla-color">texto com cor em hsla</p>
+
+            <!--Estilo de linkd-->
+            <a href="#" class="simple">Link simples</a> <br><br>
+            <a href="#" class="fancy">Link bonito</a> <br><br>
+            <a href="#" class="hover">Link com hover</a><br><br>
+            <a href="#" class="bold-link2">Link em negrito</a><br><br>
+
+            <!--box model-->
+            <div class="width-height">Largura e altura</div>
+            <div class="padding-example ">Este é um Padding</div>
+            <div class="margin-example">Exemplo de margin</div>
+            <div class="complete-box">Exemplo de algo completo</div>
+
+            <!--positions-->
+            <div class="static">Exemplo statico</div>
+            <div class="relative">Posiçao relativa</div>
+            <div class="absolute">Exemplo de posiçao absoluta</div>
+            <div class="fixed">exemplo de fixo</div>
+            <div class="sticky">Exemplo de sticky novo</div>
+
+            <div class="relative-container">
+                <div class="absolute-inside-relative">Absolouto dentro do relative</div>
+            </div><br><br>
+            <!--flexbox-->
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+</body>
+</html>
