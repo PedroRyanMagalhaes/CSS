@@ -1,6 +1,8 @@
 .item{
+    margin: 15px;
     padding: 20px;
-    width: 15px;
-    height: 15px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
 
 }
